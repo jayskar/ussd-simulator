@@ -2,6 +2,9 @@
 
 The USSD Simulator is a web-based application designed to simulate the USSD code input and response process typically used on mobile phones. This project is built using Vue.js and Vue Router.
 
+### Note:
+This project was developed using NALO (https://www.nalosolutions.com/ussd/) as the USSD provider. For other USSD providers, the code may need adjustments based on their specific implementation.
+
 ## Table of Contents
 
 - [Features](#features)
@@ -123,6 +126,54 @@ ussd-mock/
 
     - Enter the USSD code in the input box and click the `SEND` button to simulate the request.
     - View the response message and either send a follow-up code or cancel the session.
+  
+
+#### Handling CORS Issue
+
+During development, you may encounter CORS (Cross-Origin Resource Sharing) issues, especially when making requests from your local Vue.js application to a remote server. To resolve this, consider the following options:
+
+1. **Server-Side Solution (Preferred)**:
+   - If you have control over the remote server (e.g., PHP backend), configure it to allow CORS headers. Add the following headers at the beginning of your PHP response:
+     ```php
+     header("Access-Control-Allow-Origin: *"); // Allow all origins (adjust as needed)
+     header("Access-Control-Allow-Methods: GET, POST, OPTIONS"); // Allow methods
+     header("Access-Control-Allow-Headers: Content-Type, Authorization"); // Allow headers
+     
+     // Handle OPTIONS preflight requests
+     if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+         exit(0);
+     }
+     ```
+   - This approach ensures that the server explicitly allows requests from your development environment.
+
+2. **Client-Side Proxy Solution**:
+   - If modifying the server is not an option, set up a proxy server during development using a tool like `http-proxy-middleware` in your Vue.js project.
+   - Install the `http-proxy-middleware` package:
+     ```bash
+     npm install http-proxy-middleware --save
+     ```
+   - Configure `vue.config.js` in your project's root directory (create one if not present):
+     ```javascript
+     const { createProxyMiddleware } = require('http-proxy-middleware');
+     
+     module.exports = {
+       devServer: {
+         proxy: {
+           '/api': {
+             target: 'https://your-ussd-callback-url, // Replace with your server URL
+             changeOrigin: true,
+             pathRewrite: { '^/api': '' },
+             secure: false,
+           },
+         },
+       },
+     };
+     ```
+   - Adjust your Axios requests in Vue.js to use the proxy path (`/api/index.php` instead of `https://your-ussd-callback-url`).
+
+3. **Temporary Solution (Not Recommended for Production)**:
+   - For quick testing, you can use a browser extension to disable CORS. However, this introduces security risks and should only be used temporarily during development.
+
 
 ## Contributing
 
