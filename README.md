@@ -27,6 +27,10 @@ This project was developed using NALO (https://www.nalosolutions.com/ussd/) as t
 
 ## Demo
 
+https://github.com/Anthony-cloud-1/ussd-simulator/assets/64116521/8ce58e40-4976-4546-a2be-745bdc64fc54
+
+## Screenshots
+
 ![Screenshot of the USSD Simulator](https://github.com/Anthony-cloud-1/ussd-simulator/blob/main/img/shot1.png)
 
 ![Another screenshot](https://github.com/Anthony-cloud-1/ussd-simulator/blob/main/img/shot2.png)
