@@ -168,16 +168,16 @@ export default {
       this.loading = true;
 
       const userData = {
-        "USERID": "Afrolott",
-        "MSISDN": "233276233774",
+        "USERID": "Userid",
+        "MSISDN": "233XXXXXXX",
         "USERDATA": this.ussdCode,
         "MSGTYPE": this.initialDial,
-        "NETWORK": "AIRTELTIGO",
-        "SESSIONID": "495437356"
+        "NETWORK": "NETWORK",
+        "SESSIONID": "xxxxxxxxxx"
       };
 
       try {
-        const response = await axios.post('https://ussd.afrolottogh.com', userData, {
+        const response = await axios.post('https:/your-ussd-callback-url, userData, {
           headers: {
             'Content-Type': 'application/json'
           }
