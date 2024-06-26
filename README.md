@@ -24,11 +24,11 @@ The USSD Simulator is a web-based application designed to simulate the USSD code
 
 ## Demo
 
-![Screenshot of the USSD Simulator]([path/to/screenshot.png](https://github.com/Anthony-cloud-1/ussd-simulator/blob/main/Screenshots/shot1.png))
+![Screenshot of the USSD Simulator](https://github.com/Anthony-cloud-1/ussd-simulator/blob/main/img/shot1.png)
 
-![Another screenshot]([path/to/another_screenshot.png](https://github.com/Anthony-cloud-1/ussd-simulator/blob/main/Screenshots/shot2.png))
+![Another screenshot](https://github.com/Anthony-cloud-1/ussd-simulator/blob/main/img/shot2.png)
 
-![Another screenshot]([path/to/another_screenshot.png](https://github.com/Anthony-cloud-1/ussd-simulator/blob/main/Screenshots/shot3.png))
+![Another screenshot](https://github.com/Anthony-cloud-1/ussd-simulator/blob/main/img/shot3.png)
 
 ## Installation
 
