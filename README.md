@@ -185,7 +185,7 @@ We welcome contributions from the community! Here’s how you can get involved:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Anthony-cloud-1/ussd-simulator/edit/main/README.md) file for details.
 
 ## Contact
 
