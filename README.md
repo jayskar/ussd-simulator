@@ -24,8 +24,11 @@ The USSD Simulator is a web-based application designed to simulate the USSD code
 
 ## Demo
 
-![Screenshot of the USSD Simulator](path/to/screenshot.png)
-![Another screenshot](path/to/another_screenshot.png)
+![Screenshot of the USSD Simulator]([path/to/screenshot.png](https://github.com/Anthony-cloud-1/ussd-simulator/blob/main/Screenshots/shot1.png))
+
+![Another screenshot]([path/to/another_screenshot.png](https://github.com/Anthony-cloud-1/ussd-simulator/blob/main/Screenshots/shot2.png))
+
+![Another screenshot]([path/to/another_screenshot.png](https://github.com/Anthony-cloud-1/ussd-simulator/blob/main/Screenshots/shot3.png))
 
 ## Installation
 
@@ -42,7 +45,7 @@ Before you begin, ensure you have met the following requirements:
 
     ```bash
     git clone https://github.com/Anthony-cloud-1/ussd-simulator.git
-    cd ussd-simulator
+    cd ussd-simulator/ussd-mock
     ```
 
 2. **Install Dependencies**
@@ -84,7 +87,7 @@ Before you begin, ensure you have met the following requirements:
 ## Project Structure
 
 ```plaintext
-ussd-simulator/
+ussd-mock/
 │
 ├── public/
 │   ├── index.html
@@ -133,7 +136,7 @@ We welcome contributions from the community! Here’s how you can get involved:
 
     ```bash
     git clone https://github.com/Anthony-cloud-1/ussd-simulator.git
-    cd ussd-simulator
+    cd ussd-simulator/ussd-mock
     ```
 
 3. **Create a Branch**
