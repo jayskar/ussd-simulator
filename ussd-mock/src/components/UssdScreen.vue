@@ -207,7 +207,7 @@ export default {
         const response = await axios.post('http://127.0.0.1:8000/dental_ussd/dental_ussd_gw/', userData, {
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Token 41209692c1c8862776d2d578e7d6e7c0b49595ef'
+            'Authorization': process.env.VUE_APP_AUTH_TOKEN // Ensure this is set in your .env file
           }
         });
         console.log('Response:', response.data);
